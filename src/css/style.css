@@ -142,4 +142,138 @@ body {
   margin-bottom: 36px;
 }
 
+.ingredients {
+  padding: 106px 0 141px;
+}
+.ingredients__title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.ingredients__subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 82px;
+}
+.ingredients__row {
+  display: flex;
+  column-gap: 55px;
+  position: relative;
+}
+.ingredients__row::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #bdbdbd;
+  position: absolute;
+  bottom: -141px;
+}
+.ingredients__col {
+  width: 33.3%;
+  text-align: center;
+}
+.ingredients__col--best {
+  position: relative;
+}
+.ingredients__col--best::before {
+  content: "best seller";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #191919;
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.ingredients__col-img {
+  width: 100%;
+}
+.ingredients__col-title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.ingredients__col-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+.ingredients__col-btn {
+  width: 180px;
+  height: 52px;
+  background: #191919;
+  border: 1px solid #191919;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.spirits {
+  padding: 60px 0 95px;
+}
+.spirits__img {
+  width: 100%;
+}
+.spirits__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+  position: relative;
+}
+.spirits__row::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #bdbdbd;
+  position: absolute;
+  bottom: -95px;
+}
+.spirits__title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 80px;
+  color: #000000;
+}
+.spirits__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
 /*# sourceMappingURL=style.css.map */
