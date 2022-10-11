@@ -1,0 +1,145 @@
+@import "../fonts/Roboto/stylesheet.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.shipping {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background: #191919;
+  padding: 16px 0;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 25px 0 31px;
+  z-index: 1;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+  list-style-type: none;
+}
+.header__list {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.header__list-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.first-screen {
+  background: #996b60;
+  padding: 312px 0 100px;
+  position: relative;
+}
+.first-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("../../src/images/first-screen/first-screen-bg.jpg") center/cover no-repeat;
+}
+.first-screen__row {
+  display: flex;
+  justify-content: flex-end;
+}
+.first-screen__content {
+  padding-right: 28px;
+}
+.first-screen__title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 96px;
+  color: #ffffff;
+  margin-bottom: 34px;
+}
+.first-screen__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+.first-screen__btn {
+  width: 180px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.info {
+  padding: 59px 0 41px;
+}
+.info__row {
+  display: flex;
+  column-gap: 180px;
+  position: relative;
+}
+.info__row::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #bdbdbd;
+  position: absolute;
+  bottom: -41px;
+}
+.info__col {
+  width: 33.3%;
+}
+.info__col-text {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+/*# sourceMappingURL=style.css.map */

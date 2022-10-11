@@ -1,0 +1,61 @@
+.first-screen {
+  background: #996b60;
+  padding: 312px 0 100px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url("../../src/images/first-screen/first-screen-bg.jpg") center/cover no-repeat;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    padding-right: 28px;
+  }
+
+  &__title {
+    font-family: "Liberation Serif", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 73px;
+    line-height: 96px;
+    color: #ffffff;
+    margin-bottom: 34px;
+  }
+
+  &__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 46px;
+  }
+
+  &__btn {
+    width: 180px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

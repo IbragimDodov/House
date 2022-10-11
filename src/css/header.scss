@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 25px 0 31px;
+  z-index: 1;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    list-style-type: none;
+  }
+  &__list {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &-link {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
