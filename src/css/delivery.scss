@@ -1,0 +1,56 @@
+.delivery {
+  padding: 60px 0 50px;
+
+  &__row {
+    display: flex;
+  }
+
+  &__col {
+    margin-right: 55px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-w30 {
+      width: 30%;
+      padding-top: 55px;
+    }
+
+    &-title {
+      font-family: "Liberation Serif", serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: #000000;
+      margin-bottom: 19px;
+    }
+
+    &-descr {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #000000;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-main-title {
+      font-family: "Liberation Serif";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 44px;
+      color: #000000;
+      margin-bottom: 17px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}

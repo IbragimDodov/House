@@ -1,0 +1,41 @@
+.review {
+  padding: 95px 60px 50px;
+  background-color: #000000;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 165px;
+  }
+
+  &__col {
+    width: 33.3%;
+
+    &-author {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #8a8a8a;
+      display: block;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 17px;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 9.52px;
+    }
+  }
+}

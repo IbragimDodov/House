@@ -276,4 +276,92 @@ body {
   color: #000000;
 }
 
+.delivery {
+  padding: 60px 0 50px;
+}
+.delivery__row {
+  display: flex;
+}
+.delivery__col {
+  margin-right: 55px;
+}
+.delivery__col:last-child {
+  margin-right: 0;
+}
+.delivery__col-w30 {
+  width: 30%;
+  padding-top: 55px;
+}
+.delivery__col-title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+.delivery__col-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.delivery__col-descr:last-child {
+  margin-bottom: 0;
+}
+.delivery__col-main-title {
+  font-family: "Liberation Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 17px;
+}
+.delivery__col-img {
+  width: 100%;
+}
+
+.review {
+  padding: 95px 60px 50px;
+  background-color: #000000;
+}
+.review__row {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 165px;
+}
+.review__col {
+  width: 33.3%;
+}
+.review__col-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #8a8a8a;
+  display: inline-block;
+  text-align: center;
+}
+.review__col p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+.review__col-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 9.52px;
+}
+
 /*# sourceMappingURL=style.css.map */
