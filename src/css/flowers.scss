@@ -1,0 +1,60 @@
+.flowers {
+  padding: 60px 0;
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 110px;
+  }
+
+  &__col {
+    &-image-block {
+      max-width: 550px;
+      width: 100%;
+    }
+
+    &-img {
+      max-width: 550px;
+    }
+
+    &-descr {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-title {
+      font-family: "Liberation Serif", serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 80px;
+      color: #000000;
+      margin-bottom: 154px;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #000000;
+    }
+
+    &-link {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-top: 35px;
+
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

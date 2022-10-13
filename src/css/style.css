@@ -343,8 +343,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #8a8a8a;
-  display: inline-block;
-  text-align: center;
+  display: block;
 }
 .review__col p {
   font-weight: 400;
@@ -362,6 +361,152 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 9.52px;
+}
+
+.flowers {
+  padding: 60px 0;
+}
+.flowers__row {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 110px;
+}
+.flowers__col-image-block {
+  max-width: 550px;
+  width: 100%;
+}
+.flowers__col-img {
+  max-width: 550px;
+}
+.flowers__col-descr {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flowers__col-title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 154px;
+}
+.flowers__col-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+.flowers__col-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 35px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mood {
+  padding: 60px 0;
+  background-image: url("../../src/images/mood/mood-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mood__row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 550px;
+  width: 100%;
+}
+.mood__col-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  padding: 40px 69px;
+  margin-bottom: 20px;
+}
+.mood__col-info button {
+  width: 180px;
+  height: 52px;
+  margin-top: 26px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  display: inline-block;
+  cursor: pointer;
+}
+.mood__col-share {
+  background-color: #000000;
+  padding-top: 28px;
+  padding-bottom: 32px;
+}
+.mood__title {
+  font-family: "Liberation Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 80px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+.mood__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.mood__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 21px;
+  margin-top: 17px;
+}
+.mood__links-item {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #000000;
+  padding: 45px 60px 40px;
+}
+.footer .main-footer h2 {
+  font-family: "Liberation Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 72px;
+  color: #ffffff;
+}
+.footer .main-footer p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
