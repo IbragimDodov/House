@@ -1,20 +1,134 @@
 .footer {
   background: #000000;
-  padding: 45px 60px 40px;
+  padding: 45px 60px 55px;
+
+  &__content {
+    .footer__form {
+      // display: flex;
+      // justify-content: space-between;
+      position: relative;
+    }
+
+    &-input {
+      width: 440px;
+      height: 53px;
+      border: none;
+      background: transparent;
+      outline: none;
+      border-bottom: 1px solid #8a8a8a;
+      padding-left: 20px;
+      color: #ffffff;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.12px;
+        text-transform: uppercase;
+        color: #818181;
+        text-align: left;
+      }
+    }
+
+    button {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.12px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: transparent;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 21px;
+    width: 100%;
+
+    &-item {
+      list-style-type: none;
+      &:first-child {
+        margin-bottom: 7px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        &:hover {
+          font-size: 14px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
 
   .main-footer {
+    display: flex;
+    column-gap: 220px;
     h2 {
-      font-family: "Liberation Serif";
+      font-family: "Liberation Serif", serif;
       font-style: normal;
       font-weight: 400;
       font-size: 42px;
       line-height: 72px;
       color: #ffffff;
+      margin-bottom: 12px;
     }
     p {
       font-size: 18px;
       line-height: 27px;
       color: #ffffff;
+      margin-bottom: 14px;
+    }
+  }
+
+  .bottom-footer {
+    margin-top: 141px;
+    &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 60px;
+    }
+
+    &__item {
+      list-style-type: none;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        &:hover {
+          font-size: 15px;
+          color: #ffffff;
+        }
+      }
     }
   }
 }

@@ -493,19 +493,118 @@ body {
 
 .footer {
   background: #000000;
-  padding: 45px 60px 40px;
+  padding: 45px 60px 55px;
+}
+.footer__content .footer__form {
+  position: relative;
+}
+.footer__content-input {
+  width: 440px;
+  height: 53px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #8a8a8a;
+  padding-left: 20px;
+  color: #ffffff;
+}
+.footer__content-input::placeholder {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: #818181;
+  text-align: left;
+}
+.footer__content button {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 21px;
+  width: 100%;
+}
+.footer__list-item {
+  list-style-type: none;
+}
+.footer__list-item:first-child {
+  margin-bottom: 7px;
+}
+.footer__list-item a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer__list-item a:hover {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.footer .main-footer {
+  display: flex;
+  column-gap: 220px;
 }
 .footer .main-footer h2 {
-  font-family: "Liberation Serif";
+  font-family: "Liberation Serif", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 42px;
   line-height: 72px;
   color: #ffffff;
+  margin-bottom: 12px;
 }
 .footer .main-footer p {
   font-size: 18px;
   line-height: 27px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.footer .bottom-footer {
+  margin-top: 141px;
+}
+.footer .bottom-footer__list {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.footer .bottom-footer__item {
+  list-style-type: none;
+}
+.footer .bottom-footer__item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer .bottom-footer__item a:hover {
+  font-size: 15px;
   color: #ffffff;
 }
 
