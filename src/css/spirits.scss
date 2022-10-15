@@ -37,3 +37,17 @@
     color: #000000;
   }
 }
+
+@media (max-width: 992px) {
+  .spirits {
+    padding: 0px 0 40px;
+  }
+
+  .spirits__title {
+    font-size: 48px;
+  }
+
+  .spirits__row {
+    margin-top: 15px;
+  }
+}

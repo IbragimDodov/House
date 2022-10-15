@@ -162,7 +162,7 @@ body {
   }
   .first-screen__title {
     font-size: 51px;
-    line-height: 52px;
+    line-height: 43px;
     margin-bottom: 16px;
   }
   .first-screen__subtitle {
@@ -175,6 +175,31 @@ body {
     height: 40px;
     font-size: 10px;
     line-height: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .first-screen__subtitle {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .first-screen {
+    padding: 80px 0 40px;
+  }
+}
+@media (max-width: 320px) {
+  .first-screen {
+    padding: 50px 0 40px;
+  }
+  .first-screen__title {
+    font-size: 42px;
+    line-height: 39px;
+  }
+  .first-screen__btn {
+    width: 100px;
+    height: 34px;
   }
 }
 .info {
@@ -203,7 +228,64 @@ body {
   color: #000000;
   margin-bottom: 36px;
 }
+.info__col-img {
+  width: 100%;
+}
 
+@media (max-width: 1200px) {
+  .info__row {
+    column-gap: 110px;
+  }
+}
+@media (max-width: 1024px) {
+  .info__row {
+    column-gap: 47px;
+  }
+}
+@media (max-width: 992px) {
+  .info {
+    padding: 40px 0 40px;
+  }
+  .info__row {
+    column-gap: 30px;
+  }
+  .info__col-text {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .info__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .info__col {
+    width: calc(50% - 15px);
+    text-align: center;
+  }
+  .info__col:nth-child(2) {
+    order: 3;
+  }
+  .info__col-text {
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 375px) {
+  .info {
+    padding: 20px 0 20px;
+  }
+  .info__row::before {
+    bottom: -20px;
+  }
+}
+@media (max-width: 320px) {
+  .info__col-text {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
 .ingredients {
   padding: 106px 0 141px;
 }
@@ -243,6 +325,11 @@ body {
 .ingredients__col {
   width: 33.3%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .ingredients__col--best {
   position: relative;
@@ -303,6 +390,94 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 1200px) {
+  .ingredients {
+    padding: 50px 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  .ingredients__title {
+    font-size: 50px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
+  .ingredients__subtitle {
+    margin-bottom: 40px;
+  }
+  .ingredients__col-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .ingredients__col--best::before {
+    width: 60px;
+    height: 60px;
+    right: 14px;
+    top: 8px;
+  }
+  .ingredients__col-description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+  .ingredients__col-btn {
+    width: 140px;
+    height: 40px;
+  }
+}
+@media (max-width: 426px) {
+  .ingredients {
+    padding: 30px 0 30px;
+  }
+  .ingredients__title {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+  .ingredients__row {
+    column-gap: 15px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  .ingredients__col {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 375px) {
+  .ingredients__subtitle {
+    margin-bottom: 0px;
+  }
+  .ingredients__col {
+    width: 100%;
+  }
+  .ingredients__col--best::before {
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top: 5px;
+    font-size: 10px;
+    line-height: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .ingredients__title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .ingredients__col-title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 7px;
+  }
+  .ingredients__col--best::before {
+    width: 80px;
+    height: 80px;
+    right: 20px;
+    top: 6px;
+  }
+}
 .spirits {
   padding: 60px 0 95px;
 }
@@ -338,6 +513,17 @@ body {
   color: #000000;
 }
 
+@media (max-width: 992px) {
+  .spirits {
+    padding: 0px 0 40px;
+  }
+  .spirits__title {
+    font-size: 48px;
+  }
+  .spirits__row {
+    margin-top: 15px;
+  }
+}
 .delivery {
   padding: 60px 0 50px;
 }

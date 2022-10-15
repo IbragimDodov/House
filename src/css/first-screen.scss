@@ -116,7 +116,7 @@
 
   .first-screen__title {
     font-size: 51px;
-    line-height: 52px;
+    line-height: 43px;
     margin-bottom: 16px;
   }
 
@@ -131,5 +131,35 @@
     height: 40px;
     font-size: 10px;
     line-height: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .first-screen__subtitle {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-screen {
+    padding: 80px 0 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .first-screen {
+    padding: 50px 0 40px;
+  }
+
+  .first-screen__title {
+    font-size: 42px;
+    line-height: 39px;
+  }
+
+  .first-screen__btn {
+    width: 100px;
+    height: 34px;
   }
 }
