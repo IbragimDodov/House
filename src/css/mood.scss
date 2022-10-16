@@ -84,3 +84,26 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .mood__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mood {
+    padding: 40px 0;
+  }
+  .mood__col-info {
+    padding: 30px 50px;
+  }
+  .mood__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .mood__descr {
+    line-height: 20px;
+  }
+}

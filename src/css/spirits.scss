@@ -7,7 +7,6 @@
 
   &__row {
     display: flex;
-    justify-content: space-between;
     margin-top: 54px;
     position: relative;
 
@@ -28,6 +27,8 @@
     font-size: 53px;
     line-height: 80px;
     color: #000000;
+    flex-shrink: 0;
+    margin-right: 330px;
   }
 
   &__description {
@@ -38,16 +39,42 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  .spirits__title {
+    margin-right: 111px;
+  }
+}
+
+@media (max-width: 1024px) {
   .spirits {
     padding: 0px 0 40px;
   }
+  .spirits__row::before {
+    bottom: -40px;
+  }
+}
 
+@media (max-width: 992px) {
   .spirits__title {
     font-size: 48px;
   }
 
   .spirits__row {
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .spirits__row {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .spirits__title {
+    font-size: 34px;
+    margin-right: 0;
+  }
+  .spirits__description {
+    font-size: 16px;
+    line-height: 18px;
   }
 }

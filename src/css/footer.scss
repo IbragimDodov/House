@@ -132,3 +132,73 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 0px 40px;
+
+    .bottom-footer {
+      margin-top: 80px;
+    }
+  }
+  .footer .main-footer {
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .main-footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .footer__content .footer__form {
+    width: fit-content;
+  }
+  .footer__nav {
+    width: 100%;
+  }
+  .footer .bottom-footer__list {
+    justify-content: space-between;
+    column-gap: 0px;
+  }
+}
+
+@media (max-width: 426px) {
+  .footer__content-input {
+    width: 390px;
+  }
+  .footer .main-footer h2 {
+    line-height: 52px;
+  }
+  .footer .main-footer p {
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .footer .bottom-footer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding: 20px 0px 5px;
+  }
+  .footer__content-input {
+    width: 280px;
+  }
+  .footer__list {
+    row-gap: 10px;
+  }
+  .footer__list-item a {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+  .footer .bottom-footer__item a {
+    font-size: 8px;
+    line-height: 9px;
+  }
+}
