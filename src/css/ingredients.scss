@@ -114,6 +114,13 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #ffffff;
+      cursor: pointer;
+
+      &:hover {
+        color: #191919;
+        border: 1px solid #c2c2c2;
+        background: #c2c2c2;
+      }
     }
   }
 }

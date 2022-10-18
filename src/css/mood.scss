@@ -37,6 +37,12 @@
         color: #000000;
         display: inline-block;
         cursor: pointer;
+
+        &:hover {
+          color: #ffffff;
+          background: #000000;
+          border: 1px solid #ffffff;
+        }
       }
     }
     &-share {

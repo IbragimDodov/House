@@ -1,0 +1,113 @@
+.burger {
+  display: none;
+}
+
+.zIndex-0 {
+  z-index: 0;
+}
+.overflowHidden {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    background-color: #c2c2c2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: 2s;
+    padding: 20px;
+
+    &-active {
+      background: #191919;
+      transform: translateY(0);
+      transition: 2s;
+      z-index: 9;
+
+      .header__menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .header__list {
+        margin-bottom: 15px;
+      }
+      .header__logo {
+        position: absolute;
+        top: 20px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  .burger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 90%;
+    top: -35px;
+    position: relative;
+
+    &__active {
+      .burger__line {
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(-45deg);
+          top: 0;
+          transition: 2s;
+        }
+        &::after {
+          transform: rotate(45deg);
+          top: 0;
+          transition: 2s;
+        }
+      }
+    }
+
+    &__line {
+      height: 2px;
+      background-color: #ffffff;
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 2s;
+
+      &::before {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        transition: 2s;
+      }
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        top: -9px;
+        transition: 2s;
+      }
+    }
+  }
+}
